@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Abellina Sitorus</title>
+
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // tailwind.config inline (your script tag)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            brown: "#4B352A",
+                            cream: "#F1F0E4",
+                            green: "#B2CD9C",
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="scroll-smooth bg-brand-cream text-brand-brown font-body">
+
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+        <div class="bg-[#4B352A]/90 backdrop-blur-md rounded-full shadow-md px-8 py-3 flex items-center space-x-10">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="logo w-10 h-10 bg-center bg-cover rounded-full"></div>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home-page" class="text-brand-cream hover:text-[#B2CD9C] transition">Home</a>
+                <a href="#profile" class="text-brand-cream hover:text-[#B2CD9C] transition">About</a>
+                <a href="#skills" class="text-brand-cream hover:text-[#B2CD9C] transition">Skills</a>
+                <a href="#portfolio" class="text-brand-cream hover:text-[#B2CD9C] transition">Portfolio</a>
+                <a href="#contact" class="text-brand-cream hover:text-[#B2CD9C] transition">Contact</a>
+            </nav>
+        </div>
+</header>
+
+
+    <hr />
+
+    <!-- Main content -->
+    <main class="pt-20"> <!-- push content below floating navbar -->
+        
+        <!-- Home -->
+        <section id="home" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-cream px-6">
+        <div class="max-w-4xl text-center">
+        <h1 class="font-display text-4xl md:text-6xl font-bold leading-tight">
+          Welcome <span id="user-greeting" class="text-brand-green">Friend</span> to Abell's Portfolio
+        </h1>
+        <div class="mt-6 flex items-center justify-center gap-2">
+          <input id="nameInput" type="text" placeholder="Type your name"
+                 class="w-56 md:w-72 rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green">
+          <button id="nameBtn"
+                  class="rounded-lg bg-brand-brown px-4 py-2 text-brand-cream hover:bg-brand-green hover:text-brand-brown transition">
+            Say Hi
+          </button>
+        </div>
+      </div>
+    </section>
+
+        <hr />
+
+        <!-- My Profile -->
+        <section id="profile" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-green px-6">
+            <div class="max-w-3xl text-justify">
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <p>
+                    I’m a recent Computer Tech grad with a knack for project planning and bringing ideas to life. 
+                    I’ve explored serverless setups, played around with IoT, and even got to share what I know by 
+                    running workshops and teaching coding. I like keeping things organized, learning new tech, and 
+                    finding smarter ways to get stuff done.
+                </p>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Skills -->
+        <section id="skills" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-cream px-6">
+            <div class="max-w-4xl text-center">
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+                    <!-- Skill Card -->
+                    <div class="p-5 rounded-xl bg-white shadow hover:shadow-lg hover:scale-105 transition transform duration-200">
+                        <span class="text-3xl">🌐</span>
+                        <p class="mt-2 font-medium">Network Configuration</p>
+                    </div>
+            
+                    <div class="p-5 rounded-xl bg-white shadow hover:shadow-lg hover:scale-105 transition transform duration-200">
+                        <span class="text-3xl">🔗</span>
+                        <p class="mt-2 font-medium">Internet of Things</p>
+                    </div>
+            
+                    <div class="p-5 rounded-xl bg-white shadow hover:shadow-lg hover:scale-105 transition transform duration-200">
+                        <span class="text-3xl">☁️</span>
+                        <p class="mt-2 font-medium">Cloud Computing (AWS & GCP)</p>
+                    </div>
+            
+                    <div class="p-5 rounded-xl bg-white shadow hover:shadow-lg hover:scale-105 transition transform duration-200">
+                        <span class="text-3xl">💻</span>
+                        <p class="mt-2 font-medium">HTML, CSS, JS</p>
+                    </div>
+            
+                    <div class="p-5 rounded-xl bg-white shadow hover:shadow-lg hover:scale-105 transition transform duration-200 md:col-span-2">
+                        <span class="text-3xl">🎨</span>
+                        <p class="mt-2 font-medium">3D Drawing (SolidWorks)</p>
+                    </div>
+      
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="min-h-screen scroll-mt-24 flex  items-center justify-center bg-brand-green/20 px-6">
+        <div class="max-w-5xl w-full text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Portfolio</h2>
+            <p class="text-base md:text-lg mb-8">
+            A glimpse of projects I worked on during college and hands-on experiences.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Laundry-in Aja Website -->
+            <div class="rounded-xl bg-white p-4 shadow border border-brand-brown/10 text-left">
+                <h3 class="font-semibold">🧺 Laundry-in Aja Website</h3>
+                <p class="text-sm mt-1">
+                Built customer & admin websites for a laundry service. Used <strong>HTML, CSS, PHP, SQL</strong> and wrote project docs (SDD, SRS, PIP, ToR).
+                </p>
+            </div>
+            
+            <!-- Bike Tracker -->
+            <div class="rounded-xl bg-white p-4 shadow border border-brand-brown/10 text-left">
+                <h3 class="font-semibold">🚲 Bike Tracker</h3>
+                <p class="text-sm mt-1">
+                Led a <strong>3-member team</strong> to build an IoT-based bike tracker with <strong>ESP32 + Blynk</strong> for real-time location. Completed ahead of schedule.
+                </p>
+            </div>
+            
+            <!-- Serverless Architecture -->
+            <div class="rounded-xl bg-white p-4 shadow border border-brand-brown/10 text-left">
+                <h3 class="font-semibold">☁️ Serverless Architecture</h3>
+                <p class="text-sm mt-1">
+                Redesigned a company’s server setup into a <strong>serverless/event-driven</strong> system and implemented it using <strong>AWS tools</strong>.
+                </p>
+                </div>
+            
+            </div>
+        </div>
+        </section>
+
+
+        <hr />
+
+        <!-- Message Us -->
+      <section id="contact" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-cream px-6">
+        <div class="max-w-xl w-full">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-6">Send Me Message</h2>
+            <form id="messageForm" class="space-y-4">
+                <div>
+                    <label for="username" class="block mb-1">Your Name</label>
+                    <input id="username" type="text" class="w-full rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-1">Your Email</label>
+                    <input id="email" type="email" class="w-full rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required>
+                </div>
+                <div>
+                    <label for="messageText" class="block mb-1">Your Message</label>
+                    <textarea id="messageText" rows="4" class="w-full rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required></textarea>
+                </div>
+                <button type="submit" class="w-full rounded-lg bg-brand-brown px-4 py-2 text-brand-cream hover:bg-brand-green hover:text-brand-brown transition">
+                    Send
+                </button>
+            </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-brand-brown text-brand-cream">
+        <span>&copy; 2025 Abellina Sitorus. All rights reserved.</span>
+    </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
