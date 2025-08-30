@@ -175,10 +175,10 @@
         <hr />
 
         <!-- Message Us -->
-      <section id="contact" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-cream px-6">
-        <div class="max-w-xl w-full">
-        <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-6">Send Me Message</h2>
-            <form id="messageForm" class="space-y-4">
+        <section id="contact" class="min-h-screen scroll-mt-24 flex items-center justify-center bg-brand-cream px-6">
+            <div class="max-w-xl w-full">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-6">Send Me Message</h2>
+                <form id="messageForm" class="space-y-4">
                 <div>
                     <label for="username" class="block mb-1">Your Name</label>
                     <input id="username" type="text" class="w-full rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required>
@@ -191,10 +191,21 @@
                     <label for="messageText" class="block mb-1">Your Message</label>
                     <textarea id="messageText" rows="4" class="w-full rounded-lg border border-brand-brown/30 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required></textarea>
                 </div>
-                <button type="submit" class="w-full rounded-lg bg-brand-brown px-4 py-2 text-brand-cream hover:bg-brand-green hover:text-brand-brown transition">
+                    <button type="submit" class="w-full rounded-lg bg-brand-brown px-4 py-2 text-brand-cream hover:bg-brand-green hover:text-brand-brown transition">
                     Send
-                </button>
-            </form>
+                    </button>
+                </form>
+
+            <!-- Form Output -->
+            <div id="formOutput" class="hidden mt-6 p-4 bg-brand-cream border border-brand-brown rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-brand-brown mb-2">Your Submitted Data:</h3>
+                <p><strong>Name:</strong> <span id="outName"></span></p>
+                <p><strong>Email:</strong> <span id="outEmail"></span></p>
+                <p><strong>Message:</strong> <span id="outMsg"></span></p>
+            </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
